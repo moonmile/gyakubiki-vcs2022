@@ -1,0 +1,35 @@
+﻿<Window x:Class="db353.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:db353"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="300" Width="500">
+    <Grid Margin="4">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="80" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="80" />
+        </Grid.ColumnDefinitions>
+        <Button Content="検索" Margin="2" Grid.Column="3" 
+                Click="clickSearch"/>
+
+        <DataGrid ItemsSource="{Binding Items}"
+                  AutoGenerateColumns="False"
+                  CanUserAddRows="False"
+                  Grid.Row="1" Grid.ColumnSpan="3">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding Id}"  Width="60"/>
+                <DataGridTextColumn Header="書名" Binding="{Binding Title}"  Width="*"/>
+                <DataGridTextColumn Header="著者ID" Binding="{Binding AuthorId}"  Width="*"/>
+                <DataGridTextColumn Header="出版社ID" Binding="{Binding PublisherId}"  Width="*"/>
+                <DataGridTextColumn Header="価格" Binding="{Binding Price}"  Width="60"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>

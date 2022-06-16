@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="maui473.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="25" Padding="30">
+            <Label 
+                Text="Hello, World!"
+                Grid.Row="0"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                HorizontalOptions="Center" />
+
+            <Button 
+                Text="call Web API"
+                FontAttributes="Bold"
+                Grid.Row="1"
+                Clicked="OnClicked"
+                HorizontalOptions="Center" />
+
+            <Label 
+                x:Name="labelTitle"
+                Text=""
+                Grid.Row="2"
+                FontSize="Default"
+                HorizontalOptions="Center" />
+            <Label 
+                x:Name="labelAuthor"
+                Text=""
+                Grid.Row="3"
+                FontSize="Default"
+                HorizontalOptions="Center" />
+            <Label 
+                x:Name="labelPublisher"
+                Text=""
+                Grid.Row="4"
+                FontSize="Default"
+                HorizontalOptions="Center" />
+            <Label 
+                x:Name="labelPrice"
+                Text=""
+                Grid.Row="5"
+                FontSize="Default"
+                HorizontalOptions="Center" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

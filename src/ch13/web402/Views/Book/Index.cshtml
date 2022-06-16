@@ -1,0 +1,47 @@
+﻿@using web402.Models 
+@{
+    ViewData["Title"] = "Index";
+    /// 新しい Book オブジェクトを作る
+    var book = new Book
+            {
+                Id = 1,
+                Title = "新しい逆引き大全",
+                AuthorId = 1,
+                PublisherId = 1,
+                Price = 99,
+                Author = new Author
+                {
+                    Id = 1,
+                    Name = "未定"
+                },
+                Publisher = new Publisher
+                {
+                    Id = 1,
+                    Name = "秀和システム"
+                }
+            };
+}
+
+<h1>モデルを参照する</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-2">ID</div>
+        <div class="col-3">@book.Id</div>
+    </div>
+    <div class="row">
+        <div class="col-2">タイトル</div>
+        <div class="col-3">@book.Title</div>
+    </div>
+    <div class="row">
+        <div class="col-2">著者名</div>
+        <div class="col-3">@book.Author.Name</div>
+    </div>
+    <div class="row">
+        <div class="col-2">出版社名</div>
+        <div class="col-3">@book.Publisher.Name</div>
+    </div>
+    <div class="row">
+        <div class="col-2">価格</div>
+        <div class="col-3">@book.Price 円</div>
+    </div>
+</div>

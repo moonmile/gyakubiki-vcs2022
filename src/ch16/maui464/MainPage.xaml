@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="maui464.MainPage">
+
+    <ScrollView>
+        <Grid RowSpacing="25"
+              Padding="{OnPlatform iOS='30,60,30,30', Default='30'}">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+            <Label Text="テキスト入力" />
+            <Entry Text="{Binding Name}" Placeholder="名前" Grid.Row="1"  />
+            <Entry Text="{Binding Age}" Placeholder="年齢" Grid.Row="2"  />
+            <Entry Text="{Binding Address}" Placeholder="住所" Grid.Row="3"  />
+            <Button Text="入力" Grid.Row="4" Clicked="OnInputClicked"/>
+            <Label Text="{Binding Result}" Grid.Row="5"  />
+        </Grid>
+    </ScrollView>
+</ContentPage>

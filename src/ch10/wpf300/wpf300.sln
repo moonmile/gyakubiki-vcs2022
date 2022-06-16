@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31717.71
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "wpf300", "wpf300.csproj", "{CADF91DB-19B3-423C-8248-8E0C8D5291D5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CADF91DB-19B3-423C-8248-8E0C8D5291D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CADF91DB-19B3-423C-8248-8E0C8D5291D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CADF91DB-19B3-423C-8248-8E0C8D5291D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CADF91DB-19B3-423C-8248-8E0C8D5291D5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3E7CA7D9-505C-47C0-81E4-D2D226B4582C}
+	EndGlobalSection
+EndGlobal

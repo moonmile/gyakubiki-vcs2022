@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="maui465.MainPage">
+
+    <ScrollView>
+        <Grid RowSpacing="25"
+              Padding="{OnPlatform iOS='30,60,30,30', Default='30'}">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30" />
+                <RowDefinition Height="100" />
+                <RowDefinition Height="100" />
+                <RowDefinition Height="100" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+
+            <Label Text="画像を表示する"
+                   FontSize="20"
+                   Grid.ColumnSpan="3"
+                   HorizontalTextAlignment="Center" />
+            <Image Source="cock.jpg"  Grid.Row="1"/>
+            <Image Source="book.jpg"  Grid.Row="1" Grid.Column="1"/>
+            <Image Source="dotnet_bot.svg" Grid.Row="1" Grid.Column="2"/>
+            <Image Source="book.jpg" Grid.Row="2" />
+            <Image Source="dotnet_bot.svg" Grid.Row="2" Grid.Column="1"/>
+            <Image Source="cock.jpg" Grid.Row="2" Grid.Column="2"/>
+            <Image Source="dotnet_bot.svg" Grid.Row="3" />
+            <Image Source="cock.jpg" Grid.Row="3" Grid.Column="1"/>
+            <Image Source="book.jpg" Grid.Row="3" Grid.Column="2"/>
+        </Grid>
+    </ScrollView>
+</ContentPage>

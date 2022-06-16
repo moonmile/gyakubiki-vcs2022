@@ -1,0 +1,21 @@
+﻿@model web407.Models.Person
+@{
+    ViewData["Title"] = "入力結果";
+}
+
+<h1>入力結果</h1>
+
+<div class="container">
+    <div class="row">
+        <div class="col-2">名前</div>
+        <div class="col-3">@Model.Name</div>
+    </div>
+    <div class="row">
+        <div class="col-2">年齢</div>
+        <div class="col-3">@Model.Age</div>
+    </div>
+    <div class="row">
+        <div class="col-2">電話</div>
+        <div class="col-3">@Model.Telephone</div>
+    </div>
+</div>

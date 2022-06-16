@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31808.319
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "net381", "net381.csproj", "{D98BAC22-FB94-43C0-9275-ADF4EF1D9B66}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "netserver", "..\netserver\netserver.csproj", "{20C18AD7-BBF7-4FBC-8D42-0FB8E7E145EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D98BAC22-FB94-43C0-9275-ADF4EF1D9B66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D98BAC22-FB94-43C0-9275-ADF4EF1D9B66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D98BAC22-FB94-43C0-9275-ADF4EF1D9B66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D98BAC22-FB94-43C0-9275-ADF4EF1D9B66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20C18AD7-BBF7-4FBC-8D42-0FB8E7E145EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20C18AD7-BBF7-4FBC-8D42-0FB8E7E145EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20C18AD7-BBF7-4FBC-8D42-0FB8E7E145EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20C18AD7-BBF7-4FBC-8D42-0FB8E7E145EF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {414BC640-2258-48AD-B89B-F6928CB16D6C}
+	EndGlobalSection
+EndGlobal

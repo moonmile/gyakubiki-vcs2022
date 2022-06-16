@@ -1,0 +1,28 @@
+﻿@model web406.Models.Book
+@{
+    ViewData["Title"] = "登録";
+}
+
+<h1>フォーム入力</h1>
+
+@using ( @Html.BeginForm("Post", "Book"))
+{
+<div class="container">
+    <div class="row">
+        <div class="col-2">ID</div>
+        <div class="col-3">@Html.TextBoxFor( x => x.Id )</div>
+    </div>
+    <div class="row">
+        <div class="col-2">タイトル</div>
+        <div class="col-3">@Html.TextBoxFor( x => x.Title )</div>
+    </div>
+    <div class="row">
+        <div class="col-2">価格</div>
+        <div class="col-3">@Html.TextBoxFor( x => x.Price )</div>
+    </div>
+
+    <div>
+        <input type="submit" value="登録" class="btn-primary" />
+    </div>
+</div>
+}

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32319.34
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "web428", "web428.csproj", "{9974F0BB-6439-4308-917F-397102AC7E6B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "web428client", "..\web428client\web428client.csproj", "{2342535D-EEBC-4CFD-BE63-A254E0268FCB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9974F0BB-6439-4308-917F-397102AC7E6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9974F0BB-6439-4308-917F-397102AC7E6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9974F0BB-6439-4308-917F-397102AC7E6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9974F0BB-6439-4308-917F-397102AC7E6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2342535D-EEBC-4CFD-BE63-A254E0268FCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2342535D-EEBC-4CFD-BE63-A254E0268FCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2342535D-EEBC-4CFD-BE63-A254E0268FCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2342535D-EEBC-4CFD-BE63-A254E0268FCB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {55AFF20C-4F75-4CBC-838D-497626B91035}
+	EndGlobalSection
+EndGlobal

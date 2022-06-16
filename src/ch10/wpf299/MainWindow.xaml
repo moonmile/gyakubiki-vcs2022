@@ -1,0 +1,30 @@
+﻿<Window x:Class="wpf299.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:wpf299"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="300" Width="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+        </Grid.RowDefinitions>
+        <ComboBox x:Name="cb1" Grid.Row="0" SelectionChanged="selectComboBox1">
+            <ComboBoxItem Content="国語" />
+            <ComboBoxItem Content="算数" />
+            <ComboBoxItem Content="理科" />
+            <ComboBoxItem Content="社会" />
+            <ComboBoxItem Content="プログラミング" />
+        </ComboBox>
+        <ComboBox x:Name="cb2" Grid.Row="1" SelectionChanged="selectComboBox2">
+        </ComboBox>
+        <TextBlock x:Name="message" Grid.Row="5" Margin="4"></TextBlock>
+    </Grid>
+</Window>

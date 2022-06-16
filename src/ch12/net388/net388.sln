@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31808.319
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "net388", "net388.csproj", "{8855011D-B68A-411A-95DA-AB4A991CC40F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "netserverauth", "..\netserverauth\netserverauth.csproj", "{88B27813-9F40-4A04-98FA-273A3E965C57}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8855011D-B68A-411A-95DA-AB4A991CC40F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8855011D-B68A-411A-95DA-AB4A991CC40F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8855011D-B68A-411A-95DA-AB4A991CC40F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8855011D-B68A-411A-95DA-AB4A991CC40F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88B27813-9F40-4A04-98FA-273A3E965C57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88B27813-9F40-4A04-98FA-273A3E965C57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88B27813-9F40-4A04-98FA-273A3E965C57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88B27813-9F40-4A04-98FA-273A3E965C57}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6AAAED7F-29FB-4621-ABDB-2AFDF16A39D0}
+	EndGlobalSection
+EndGlobal

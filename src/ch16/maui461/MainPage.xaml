@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="maui461.MainPage">
+
+    <ScrollView>
+        <Grid RowSpacing="25" 
+              Padding="{OnPlatform iOS='30,60,30,30', Default='30'}">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+
+            <Label 
+                Text="Hello, C# World!"
+                Grid.Row="0"
+                FontSize="32"
+                HorizontalOptions="Center" />
+            <Label 
+                x:Name="labelCounter"
+                Text="0"
+                Grid.Row="1"
+                FontSize="32"
+                HorizontalOptions="Center" />
+            <Label 
+                x:Name="labelTime"
+                Text="00:00"
+                Grid.Row="2"
+                FontSize="32"
+                HorizontalOptions="Center" />
+            <Button 
+                Text="Click me"
+                FontAttributes="Bold"
+                Grid.Row="3"
+                Clicked="OnClicked"
+                HorizontalOptions="Center" />
+        </Grid>
+    </ScrollView>
+</ContentPage>

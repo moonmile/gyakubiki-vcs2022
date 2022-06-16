@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31825.309
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "web424", "web424.csproj", "{CC77ECE1-8CD1-4F1B-AA35-247406E129D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "web424client", "..\web424client\web424client.csproj", "{F7F83F00-EDBC-4F0F-ABCA-AC2E00D48550}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CC77ECE1-8CD1-4F1B-AA35-247406E129D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC77ECE1-8CD1-4F1B-AA35-247406E129D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC77ECE1-8CD1-4F1B-AA35-247406E129D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC77ECE1-8CD1-4F1B-AA35-247406E129D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7F83F00-EDBC-4F0F-ABCA-AC2E00D48550}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7F83F00-EDBC-4F0F-ABCA-AC2E00D48550}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7F83F00-EDBC-4F0F-ABCA-AC2E00D48550}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7F83F00-EDBC-4F0F-ABCA-AC2E00D48550}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C9F24909-C2CF-49DF-B97A-90A5F5D3AB02}
+	EndGlobalSection
+EndGlobal

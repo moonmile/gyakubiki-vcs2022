@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="maui462.MainPage">
+
+    <ScrollView>
+        <Grid RowSpacing="25" 
+              Padding="{OnPlatform iOS='30,60,30,30', Default='30'}">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50" />
+                <RowDefinition Height="310" />
+                <RowDefinition Height="50" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+            <Label Text="Row(0,0)" 
+                   Grid.Row="0" Grid.Column="0" 
+                   BackgroundColor="Red" TextColor="White" 
+                   HorizontalTextAlignment="Center" 
+                   VerticalTextAlignment="Center"/>
+            <Label Text="Row(0,1)" 
+                   Grid.Row="0" Grid.Column="1" 
+                   BackgroundColor="Blue" 
+                   TextColor="White" 
+                   HorizontalTextAlignment="Center" 
+                   VerticalTextAlignment="Center"/>
+            <Label Text="Row(0,2)" 
+                   Grid.Row="0" Grid.Column="2" 
+                   BackgroundColor="Green" 
+                   TextColor="White" 
+                   HorizontalTextAlignment="Center" 
+                   VerticalTextAlignment="Center"/>
+            <Image Grid.Row="1" Grid.Column="1"
+                Source="dotnet_bot.png"
+                WidthRequest="250"
+                HeightRequest="310"
+                HorizontalOptions="Center" />
+            <Label Text="Row(2,0)" Grid.Row="2" Grid.Column="0" BackgroundColor="Red" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+            <Label Text="Row(2,1)" Grid.Row="2" Grid.Column="1" BackgroundColor="Blue" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+            <Label Text="Row(2,2)" Grid.Row="2" Grid.Column="2" BackgroundColor="Green" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+        </Grid>
+    </ScrollView>
+</ContentPage>

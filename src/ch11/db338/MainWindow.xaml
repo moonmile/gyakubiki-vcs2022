@@ -1,0 +1,42 @@
+﻿<Window x:Class="db338.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:db338"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="300" Width="400">
+    <Grid Margin="8">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="80" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="80" />
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Text="検索数：" Margin="4" />
+        <TextBlock Text="{Binding Count}" Margin="4" Grid.Column="1"/>
+        <Button Content="検索" Grid.Column="2"
+                Click="clickSearch" Margin="2" />
+        <TextBlock Text="名前：" Margin="4" Grid.Row="1"/>
+        <TextBox Text="{Binding Name}" Grid.Column="1" Grid.Row="1" Margin="4" Padding="2" />
+        
+        <DataGrid 
+            ItemsSource="{Binding Items}"
+            SelectedItem="{Binding SelectedItem}"
+            AutoGenerateColumns="False"
+            CanUserAddRows="False"
+            Grid.Row="2" Grid.ColumnSpan="3" Margin="4">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="50"/>
+                <DataGridTextColumn Header="名前" Binding="{Binding Name}" Width="*"/>
+                <DataGridTextColumn Header="年齢" Binding="{Binding Age}" Width="50"/>
+                <DataGridTextColumn Header="住所" Binding="{Binding Address}" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>

@@ -1,0 +1,33 @@
+﻿@using web404.Models
+@model List<Book>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>書籍一覧</h1>
+@if ( @Model == null )
+{
+    <div>書籍がありません</div>
+} 
+else
+{
+<table class="table">
+    <tr>
+        <th>ID</th>
+        <th>タイトル</th>
+        <th>著者名</th>
+        <th>出版社</th>
+        <th>価格</th>
+    </tr>
+@foreach ( var book in @Model )
+{
+    <tr>
+        <td>@book.Id</td>
+        <td>@book.Title</td>
+        <td>@book.Author?.Name</td>
+        <td>@book.Publisher?.Name</td>
+        <td>@book.Price</td>
+    </tr>
+}
+</table>
+}
